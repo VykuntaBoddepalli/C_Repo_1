@@ -660,7 +660,7 @@ int main(int __attribute__((unused)) argc, const char __attribute__((unused)) * 
          printf("Failed: %s\n\n", e);
    }
    if (log)
-      j_log(debug, "jcgi", j_get(j, "info.script_name"), j, NULL);
+      j_log(debug, "jcgi", j_get(j, "info"), j, NULL);
    j_t o = j;
    if (j_len(j) == 1)
       o = j_first(j);           // Only one thing asked for
